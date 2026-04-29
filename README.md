@@ -29,7 +29,7 @@ A aplicação foi desenvolvida utilizando arquitetura em camadas, com o objetivo
 
 ### 1. Clonar o repositório
 
-git clone https://github.com/seuusuario/sgc-sistema-comercial.git
+git clone [https://github.com/seuusuario/sgc-sistema-comercial.git](https://github.com/ThiagoRoberto-dev/sgc-sistema-comercial.git)
 
 ---
 
