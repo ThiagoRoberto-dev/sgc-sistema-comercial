@@ -1,16 +1,42 @@
 package com.thiago.sgc_sistema.model;
 
-@Entity
-public class Cliente {
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "cliente")
+public class Cliente {
 	@Id
-	@GeneratedValue(strategy = Generat.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@Column(nullable = false, length = 100)
 	private String nome;
 
-	@Column(unique = true)
+	@Column(nullable = false, unique = true, length = 14)
 	private String cpf;
 
-	// getters e setters
+	// Getters e Setters
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 }
